@@ -27,6 +27,6 @@ class ScrapeUrl:
 
 
     def saveData(self, data):
-        with open("data/"+str(time.time())+".txt", "w") as file:
+        with open("data/{}{}".format(str(time.time()), ".txt"), "w") as file:
             file.write(data)
 

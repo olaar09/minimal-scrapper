@@ -32,6 +32,6 @@ if __name__ == '__main__':
     minimalScraper = minimal()
     for url in  sys.argv[1:]:
         multiprocessing.Process(target=minimalScraper.startScapper(url)).start()
-        print("Started thread for "+ url)
+        print("Started thread for {} ".format(url))
 
 
